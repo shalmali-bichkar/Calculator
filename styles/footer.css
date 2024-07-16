@@ -1,0 +1,104 @@
+p{
+    margin:0px;
+    padding:0pn;
+}
+.footer{
+    border:2px solid black;
+    height: fit-content;
+    display:flex;
+    justify-content:center;
+    margin:0px 0px 0px 0px;
+    padding-top:2px;
+}
+
+.footer-content-container{
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+.footer-code-connect-container{
+    
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.footer-logo-title-container{
+    padding:2px;
+    display:flex;
+    flex-direction: row;
+    border:2px solid purple;
+    height:34px;
+    align-items: center;
+    width:33%;
+    
+
+}
+
+.footer-calc-icon{
+    height:30px;
+    
+    
+} 
+.footer-title{
+    padding-left:4px;
+}
+
+.footer-view-code-container{
+    display:flex;
+    border:2px solid green;
+    height:34px;
+    justify-content: center;
+    padding:2px;
+    width:33%;
+}
+.footer-view-code-text{
+    
+    align-self:center;
+}
+.footer-connect-links-container{
+    display:flex;
+    justify-content:space-around;
+    flex-direction: row;
+    padding:2px 60px;
+    height:34px;
+    border:2px solid red;
+    width:33%;
+    
+    
+
+    
+}
+.footer-connect-text{
+    text-align: right;
+    border:2px solid yellow;
+    align-self: center;
+    margin-right:16px;
+
+}
+
+/* .footer-link-icons-container{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+    border:2px solid blue;
+} */
+
+.footer-link-icon{
+    height:30px;
+    padding-left:2px;
+    padding-right:2px;
+    align-self: center;
+}
+
+.footer-end-display{
+    margin-top:8px;
+    padding:0px;
+    font-size: 16px;
+    align-self: center;
+    color:rgb(92, 92, 92);
+}
