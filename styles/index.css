@@ -2,13 +2,24 @@
 @import 'footer.css';
 @import 'main.css';
 
-* {
-    box-sizing: border-box;
+
+:root{
+    --dark-text-light-grey: #6D6D6D;
+    --dark-btn-purple: #7e53f8;
+    --dark-btn-purple-faded: rgba(126, 83, 248, 0.2);
+    --dark-btn-dark-grey: #1D1D1D;
+    --dark-btn-grey: #525252;
+    --light-mode-grey: #DFDFDF;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;    
+}
 
 body {
     margin: 0px !important;
+    
 }
 
 .max-width-container{
