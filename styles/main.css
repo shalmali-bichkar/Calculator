@@ -1,5 +1,5 @@
 
-.main{
+.main{ /*styling entire main*/
     height: calc(100vh - 134px);
     background-color: #f1f1f1;
     padding:20px 0px;
@@ -8,11 +8,10 @@
     align-items: center;
 }
 
-.middlebox{
+.middlebox{  /*styling the main box of calculator*/
     display:flex;
     flex-direction: column;
     border-radius:12px;
-    /* border: 2px solid rgb(112, 47, 138); */
     width:fit-content;
     background-color: white;
     height:fit-content;
@@ -21,7 +20,7 @@
     font-style: normal;
 }
 
-.display-area{
+.display-area{ /*styling the display area */
     border-radius:12px;
     margin:16px;
     height:160px;
@@ -32,7 +31,7 @@
     text-align: right;
 }
 
-.display-box{
+.display-box{ /*styling the actual display box inside display aea where the calculations and answer is seen*/
     width:338px; 
     display: block;
     overflow-x: auto;
@@ -41,11 +40,11 @@
     font-size: 56px;
 }
 
-.display-box::-webkit-scrollbar{
+.display-box::-webkit-scrollbar{ /*adding horizontal scroll to the display box */
     display:none;
 }
 
-.dynamic-display-box{
+.dynamic-display-box{  /*styling the dynamic display box inside the display area where the answer is shown dynamically*/
     display: block;
     width:338px;
     overflow-x:auto;
@@ -55,11 +54,11 @@
     padding: 0px;
 }
 
-.dynamic-display-box::-webkit-scrollbar{
+.dynamic-display-box::-webkit-scrollbar{  /*adding horizontal scrolbar to the dynamic display box*/
     display:none;
 }
 
-.calc-btns-container{
+.calc-btns-container{ /*styling the container of the buttons of the calculator*/
     display:flex;
     flex-direction: column;
     border-radius:17px;
@@ -68,14 +67,14 @@
     box-shadow: 0px -4px 6px 0px #d4d4d4;
 }
 
-.calc-btn-row{
+.calc-btn-row{ /*styling a single row of calculator buttons */
     display:flex;
     flex-direction: row;
     padding:4px;
     margin:3px;    
 }
 
-.calc-btn{
+.calc-btn{ /*styling an individual calculator button*/
     height:65px;
     width:65px;
     border-radius:50%;
@@ -87,49 +86,50 @@
     font-weight:500;   
 }
 
-.calc-btn.num-btn{
+.calc-btn.num-btn{  /*styling the numerical calculator buttons ( 1 2 3 4 5 6 7 8 9 0 )*/
     font-size:27px;
     font-weight:500;
 }
 
-.calc-btn#all-clear-btn{
+.calc-btn#all-clear-btn{  /*styling the all clear button (AC) */
     font-size: 29px;
     color: var(--dark-btn-purple);
 }
 
-.calc-btn#remove-digit-btn{
+.calc-btn#remove-digit-btn{ /*styling the remove digit button ( <= )*/
     font-size: 27px;
     color: var(--dark-btn-purple);
 }
 
-.calc-btn#equal-btn{
+.calc-btn#equal-btn{ /*styling the equal button (=)*/
     background-color:var(--dark-btn-purple);;
 }
 
-[btn-calc-val='(']{
+[btn-calc-val='(']{  /*styling button whose btn-calc-val is ( */
     font-size: 32px;
 }
 
-[btn-calc-val=')']{
+[btn-calc-val=')']{ /*styling button whose btn-calc-val is ) */
     font-size: 32px;
 }
 
-.calc-btn:hover{
+.calc-btn:hover{ /*changing cursor to hover for all calculator buttons*/
     cursor: pointer;
 }
 
-/* light theme */
+
+/* ............LIGHT-THEME............ */
 
 .light-theme.purple .main{
     
 }
 
-.light-theme.purple .middlebox{
+.light-theme.purple .middlebox{  /*styling the main calculator box for light theme*/
     background-color: var(--light-mode-grey);
     color: #1e1e1e;
 }
 
-.light-theme.purple .display-area{
+.light-theme.purple .display-area{ /*styling the display area*/
     background-color:#DFDFDF;
     color: #1e1e1e;
 }
@@ -138,33 +138,31 @@
     
 }
 
-.light-theme.purple .dynamic-display-box{
+.light-theme.purple .dynamic-display-box{ /*styling the dynamic display box */
     color: var(--dark-btn-purple)
 }
 
-.light-theme.purple .calc-btns-container{
+.light-theme.purple .calc-btns-container{ /*styling the calculator buttons container*/
     background-color: white;
 }
 
-.light-theme.purple .calc-btn{
-    /* background-color: rgb(207, 207, 207);  */
+.light-theme.purple .calc-btn{ /*styling all calculator buttons*/
     background-color: white;
     color:var(--dark-btn-purple);
     border:1px solid var(--dark-btn-purple)
 }
 
-.light-theme.purple .calc-btn#equal-btn{
-    /* background-color: rgb(112, 47, 138); */
+.light-theme.purple .calc-btn#equal-btn{ /*styling the equal to btn (=)*/
     color:#FFFFFF;
 }
 
-.light-theme.purple .calc-btn#remove-digit-btn{
+.light-theme.purple .calc-btn#remove-digit-btn{ /*styling the remove digit button (<=)*/
     background-color: #f5f5f5 ;
     border:none;
     font-size:35px;
 }
 
-.light-theme.purple .calc-btn#all-clear-btn{
+.light-theme.purple .calc-btn#all-clear-btn{ /*styling the all clear button (AC)*/
     background-color: var(--light-mode-grey);
     border:none;
     color:var(--dark-btn-purple);
@@ -172,29 +170,29 @@
     font-size:30px;
 }
 
-.light-theme.purple .calc-btn.num-btn{
+.light-theme.purple .calc-btn.num-btn{ /* styling all number buttons ( 1 2 3 4 5 6 7 8 9 0)*/
     background-color: var(--light-mode-grey);
     border:none;
     color:#1e1e1e;
 }
 
 
-/* dark theme */
-.dark-theme.purple.body{
+/* ............DARK-THEME............ */
+.dark-theme.purple.body{ /*styling the body*/
     background-color: #151515;
 }
 
-.dark-theme.purple .main{
+.dark-theme.purple .main{ /*styling the main */
     background-color: #151515;
 }
 
-.dark-theme.purple .middlebox{
+.dark-theme.purple .middlebox{ /*styling the calculator box*/
     background-color: rgb(15, 15, 15);
     border:none;
     box-shadow: -5px 5px 10px 0px #111;
 }
 
-.dark-theme.purple .display-area{
+.dark-theme.purple .display-area{ /*styling the display area*/
     background-color: rgb(15, 15, 15);
     color : #FFFFFF;
 }
@@ -203,36 +201,36 @@
     
 }
 
-.dark-theme.purple .dynamic-display-box{
+.dark-theme.purple .dynamic-display-box{ /*stying the dynamic display area*/
     color : var(--dark-btn-purple);
 }
 
-.dark-theme.purple .calc-btns-container{
+.dark-theme.purple .calc-btns-container{ /*styling the calculator buttons container*/
     background-color: black;
     box-shadow: 0px -4px 5px 0px #111;
 }
 
-.dark-theme.purple .calc-btn{
+.dark-theme.purple .calc-btn{ /*styling all calculator buttons*/
     background-color: var(--dark-btn-dark-grey);
     color: var(--dark-btn-purple)
 }
 
-.dark-theme.purple .calc-btn#equal-btn{
+.dark-theme.purple .calc-btn#equal-btn{ /*stylign the equal to button(=)*/
     background-color: var(--dark-btn-purple);
     color:#FFFFFF;
 }
 
-.dark-theme.purple .calc-btn#remove-digit-btn{
+.dark-theme.purple .calc-btn#remove-digit-btn{ /*styling the remove digit button ( <= ) */
     background-color: var(--dark-btn-purple-faded);
     color: var(--dark-btn-purple);
     font-size:35px;
 }
 
-.dark-theme.purple .calc-btn#all-clear-btn{
+.dark-theme.purple .calc-btn#all-clear-btn{ /*styling the all clear button(AC) */
     background-color: var(--dark-btn-purple-faded);
 }
 
-.dark-theme.purple .calc-btn.num-btn{
+.dark-theme.purple .calc-btn.num-btn{ /*styling the numebr buttons (1 2 3 4 5 6 7 8 9 0)*/
     background-color: var(--dark-btn-grey);
     color:#FFFFFF;
 }

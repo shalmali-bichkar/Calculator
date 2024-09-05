@@ -1,0 +1,209 @@
+
+
+/* making the website responsive for less wide screens like mobile phones */
+
+/*for devices of height > 500px and width<600px (eg-phones */
+@media (min-height:500px) and (max-width:600px){
+    .body{ /*adding scrollbar to body*/
+        display:block;
+        overflow-y: auto;
+    }
+
+    .body::-webkit-scrollbar{ /*hiding scrollbar of body*/
+        display: none;
+    }
+
+    .header{ /*setting width of header*/
+        width:100%;
+    }
+
+    .main{ /*arranging and sizing main*/
+        height:800px;
+        justify-content: center;
+    }
+
+    /* main::-webkit-scrollbar{ 
+        display: none;
+    } */
+
+    .footer{ /*arranging and sizing footer*/
+        display: flex;
+        flex-direction:row;
+    }
+
+    .footer-logo-title-container{ /*adding margin to footer logo title container*/
+        margin-left:10px;
+    }
+
+    .footer-code-connect-container{ /*arranging contens of footer in a column */
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .footer-view-code-container{ /*sizing and aligning the 'view code' container*/
+        padding:0px;
+        margin:0px;
+        margin-left:22px;
+        align-self:start;
+        margin-top: 6px;
+        justify-content: left;
+    }
+
+    .view-code-text{ /*sizing and arranging the 'view code' text*/
+        padding:0px;
+        margin:0px;
+        
+    }
+    
+    .footer-connect-links-container{ /*styling,resizing and aligning the footer links */
+        padding:0px;
+        margin:0px;
+        margin-left:22px;
+        align-self:start;
+        margin-top: 10px;
+        justify-content: space-between;
+        width:80%;
+        align-items: start;
+    }
+
+    .footer-connect-text{ /*styling the 'connect with me ' text*/
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .footer-connect-links-container a{ /*arranging all elements with a tag inside footer-connect-links-container*/
+        padding-left:0px;
+        align-items: start;
+    }
+
+    .footer-end-display{ /*arranging the end line(Shalmali Rajan Bichkar, 2024) of footer */
+        margin-top:15px;
+        margin-bottom:4px;
+    }
+}
+
+@media(max-height:700px){
+    .main{
+        height:700px;
+    }
+}
+
+/*for devices with width from 600px to 1200px* (eg-tablets)*/
+@media (min-width:600px) and (max-width:1200px){
+    .body{ /*adding scrollbar to body*/
+        display:block;
+        overflow-y: auto;
+    }
+    .body::-webkit-scrollbar{ /*hiding scrollbar of body*/
+        display: none;
+    }
+    .header .logo-title-container{ /*adding padding to top left logo and title*/
+        padding-left:40px;
+    }
+    .header .theme-switch-icon-container{/*adding right padding to theme switch icon*/
+        padding-right:40px;
+    }
+    .main{/*resizing height*/
+        height: calc(100vh - 140px);
+    }
+    .footer-content-container{ /*aligning footer items in center*/
+        align-items: center;
+    }
+    .footer-code-connect-container{ /*resizing footer contents*/
+        width:90%;
+    }
+    .footer-connect-links-container{/*adjusting footer connect links*/
+        display:flex;
+        width:40%;
+        justify-content: space-around;
+        align-items: start;
+        padding-left:0px;
+        padding-right:8px;
+    }
+    .footer-connect-text{/*adjusting right margin of 'connect with me' text*/
+        margin-right:2px;
+    }
+    .footer-connect-links-container p{ /*aligning 'connect with me' text in center*/
+        align-self: center;
+    }
+    
+}
+
+/*for devices with height<400 and width>500 */
+@media (max-height:700px) and (min-width:500px){
+    .body{ /*adding scrollbar to body*/
+        display:block;
+        overflow-y: auto;
+    }
+
+    .body::-webkit-scrollbar{ /*hiding scrollbar of body*/
+        display: none;
+    }
+
+    .header{ /*setting width of header*/
+        width:100%;
+    }
+
+    .main{ /*arranging and sizing main*/
+        height:800px;
+        justify-content: center;
+    }
+    .footer{ /*arranging and sizing footer*/
+        display: flex;
+        flex-direction:row;
+    }
+
+    .footer-logo-title-container{ /*adding margin to footer logo title container*/
+        margin-left:10px;
+    }
+
+    .footer-code-connect-container{ /*arranging contens of footer in a column */
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .footer-view-code-container{ /*sizing and aligning the 'view code' container*/
+        padding:0px;
+        margin:0px;
+        margin-left:22px;
+        align-self:start;
+        margin-top: 6px;
+        justify-content: left;
+    }
+
+    .view-code-text{ /*sizing and arranging the 'view code' text*/
+        padding:0px;
+        margin:0px;
+        
+    }
+    
+    .footer-connect-links-container{ /*styling,resizing and aligning the footer links */
+        padding:0px;
+        margin:0px;
+        margin-left:22px;
+        align-self:start;
+        margin-top: 10px;
+        justify-content: space-between;
+        width:60%;
+        align-items: start;
+    }
+
+    .footer-connect-text{ /*styling the 'connect with me ' text*/
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .footer-connect-links-container a{ /*arranging all elements with a tag inside footer-connect-links-container*/
+        padding-left:0px;
+        align-items: start;
+    }
+
+    .footer-end-display{ /*arranging the end line(Shalmali Rajan Bichkar, 2024) of footer */
+        margin-top:15px;
+        margin-bottom:4px;
+    }
+}

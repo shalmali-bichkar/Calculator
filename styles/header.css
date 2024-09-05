@@ -1,4 +1,4 @@
-.header {
+.header { /* styling entire header */
     width:100%;
     margin:0px;
     padding:0px;
@@ -9,13 +9,13 @@
     z-index:10;
 }
 
-.header-content-container {
+.header-content-container { /*arranging elements in the header-content-container */
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.logo-title-container {
+.logo-title-container { /*styling the logo and title container and arranging contents inside */
     height:60px;
     display: flex;
     flex-direction: row;
@@ -24,13 +24,13 @@
     margin-left: 4px;
     align-items: center;
 }
-.logo {
+.logo { /*styling the logo */
     height: 40px;
     width: 38px;
     padding:4px;
     border-radius: 10px;
 }
-.title {
+.title { /*styling the title- 'Calculator' */
     width: 90%;
     display: inline-block;
     padding:8px; 
@@ -42,7 +42,7 @@
     font-size: 30px;    
 }
 
-.theme-switch-icon-container {
+.theme-switch-icon-container { /*styling and arranging the container of the theme switch icon */
     width:fit-content;
     display:flex;
     align-self: center;
@@ -54,11 +54,11 @@
     margin-right:10px; 
 }
 
-.theme-switch-icon-container:hover{
+.theme-switch-icon-container:hover{ /*switching cursor to pointer on hovering over the theme switch icon */
     cursor: pointer;
 }
 
-.theme-switch-icon {
+.theme-switch-icon { /*styling the theme switch icon */
     display:flex;
     justify-content: center;
     align-items: center;
@@ -68,22 +68,22 @@
     align-self: center;
 }
 
-/* light theme */
-.light-theme .header{
+/*............LIGHT-THEME............ */
+.light-theme .header{ /* styling header */ 
     box-shadow: 4px 4px 4px 0px  #e2e2e2; 
 }
 
-.light-theme .light-theme-icon {
+.light-theme .light-theme-icon { /* hiding the light theme icon(sun)*/
     display: none;
 }
 
-.light-theme .dark-theme-icon {
+.light-theme .dark-theme-icon { /*showing dark theme icon(moon)  */
     display: block;
     fill: #000000;    
 }
 
-.light-theme-icon{
-    height:28px;
+.dark-theme-icon{ /*styling the dark theme icon (moon) */
+    height:24px;
 }
 
 /* dark theme */
@@ -94,15 +94,15 @@
 }
 .dark-theme .header-content-container{ }
 
-.dark-theme-icon{
-    height:24px;
+.light-theme-icon{ /*styling light theme icon(sun)  */
+    height:28px;
 }
 
-.dark-theme .dark-theme-icon{
+.dark-theme .dark-theme-icon{ /*hiding dark theme icon */
     display:none;
 }
 
-.dark-theme .light-theme-icon{
+.dark-theme .light-theme-icon{ /*showing light theme icon*/
     display:block;
     fill:rgb(255, 255, 255);
 }

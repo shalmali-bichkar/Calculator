@@ -1,9 +1,10 @@
-@import 'header.css';
+@import 'header.css'; /*importing the css files */
 @import 'footer.css';
 @import 'main.css';
+@import 'responsive.css';
 
 
-:root{
+:root{ /*defining and naming colors */
     --dark-text-light-grey: #6D6D6D;
     --dark-btn-purple: #7e53f8;
     --dark-btn-purple-faded: rgba(126, 83, 248, 0.2);
@@ -12,18 +13,59 @@
     --light-mode-grey: #DFDFDF;
 }
 
-* {
+* { /*defining for all html elements (specific styling of elements later will take precedence) */
     box-sizing: border-box;
     font-family: Lato, sans-serif;    
 }
 
-body {
+body { /*removing margin from body */
     margin: 0px !important;
     
 }
 
-.max-width-container{
+.max-width-container{ /*defining a max-width for the website */
     max-width: 1440px; 
     width:100%;
 }
+
+
+
+#toast-box{/*styling toast box */
+    position:absolute;
+    z-index: 100;
+    top:100px;
+    right:140px;
+    display:flex;
+    align-items:flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding:5px;
+    margin:0px;
+    padding:0px;
+}
+
+.toast{ /*styling toast message*/
+    display:flex;
+    width:450px;
+    height:50px;
+    margin:10px 0px;
+    font-size:20px;
+    font-family: Lato, sans-serif;    
+    font-weight:600;
+    background-color:#7f53f88c;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 5px 6px 0px rgb(224, 224, 224);
+}
+
+.dark-theme .toast{ /*styling toast message in dark-theme*/
+    background-color: #7f53f867;
+    font-family: Lato, sans-serif;    
+    font-weight:600;
+    color: rgb(230, 230, 230);
+    box-shadow: -5px 5px 6px 0px rgb(20, 20, 20);
+}
+
+
 
