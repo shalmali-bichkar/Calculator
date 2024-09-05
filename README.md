@@ -13,18 +13,18 @@
 ## 3. Design : 
 ### a) Computer
 #### i) Light-theme
-![alt text](image.png)
+![alt text](output/image.png)
 #### ii) Dark-theme
-![alt text](image-1.png)
+![alt text](output/image-1.png)
 
 ## b) Tablet
 #### i) Vertical - 
-![alt text](image-5.png) 
-#### ii)Horizotal - 
-![alt text](image-6.png)
+![alt text](output/image-2.png)
+#### ii) Horizotal - 
+![alt text](output/image-6.png)
 
 ## c) Phone:
 #### i) Vertical-
-![alt text](image-3.png) ![alt text](image-4.png)
+![alt text](output/image-3.png)![alt text](output/image-4.png)
 #### ii) Horizontal-
-![alt text](image-7.png) ![alt text](image-8.png)![alt text](image-9.png)
+![alt text](output/image-7.png)![alt text](output/image-8.png)![alt text](output/image-9.png)
