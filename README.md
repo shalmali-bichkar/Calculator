@@ -1,5 +1,5 @@
 # Responsive Calculator Website 
-## Website Link - https://shalmali-bichkar.github.io/responsive-calculator-website/
+### Website Link - https://shalmali-bichkar.github.io/responsive-calculator-website/
 ## 1. Introduction - 
 ### I am currently a first year college student learning web development. I have made this website using HTML, CSS and JavaScript.
 ## 2. Description - 
